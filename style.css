@@ -1,21 +1,23 @@
-*{
+/* Global Styles */
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: poppins,sans-serif;
+    font-family: poppins, sans-serif;
     text-decoration: none;
-    
-
+    color: white;
 }
-body{
-    overflow-x:hidden ;
-    
+
+body {
+    overflow-x: hidden;
+    background: #222;
+    color: white;
 
 }
 .hero-header{
     width: 100%;
     min-height: 100vh;
-    height: 100%;
+    height: 80%;
     background:#222;
 }
 
@@ -39,7 +41,7 @@ header{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 .hero-header, section {
-    padding-top: 80px; /* Adjust height based on navbar size */
+    padding-top: 65px; /* Adjust height based on navbar size */
 }
 .logo{
     display: inline-flex;
@@ -102,10 +104,11 @@ nav .navlinks li a{
 }
 .container{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 4rem;
-    border-top: #005bb5;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
     
 }
 .container .hero-pic{
@@ -115,6 +118,7 @@ nav .navlinks li a{
     overflow: hidden;
     border: 15px solid #444;
     box-shadow: 5px 7px 25px rgba(0,0,0,0.5);
+    align-items: center;
 
 }
 .hero-pic img{
@@ -176,90 +180,7 @@ nav .navlinks li a{
     transform: rotate(360deg);
 }
 
-@media (max-width: 930px) {
-    nav .togglebtn {
-        display: initial;
-    }
-    .click span {
-        position: absolute;
-        margin-top: 12px;
-    }
-    .click span:first-child {
-        transform: rotate(-40deg);
-    }
-    .click span:nth-child(2) {
-        opacity: 0;
-        margin: 0;
-    }
-    .click span:last-child {
-        transform: rotate(40deg);
-        top: 0;
-    }
-    nav .navlinks {
-        position: absolute;
-        top: 110px;
-        right: -100%;
-        bottom: 0;
-        width: 60%;
-        height: 100vh;
-        background-color: #222;
-        z-index: 3;
-        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
-        transition: right 0.5s;
-        padding: 25px 0;
-    }
-    nav .navlinks li {
-        display: block;
-    }
-    nav .navlinks li a {
-        display: block;
-        margin-bottom: 15px;
-        text-align: center;
-    }
-    nav .navlinks.open {
-        right: 0;
-    }
-}
 
-@media(max-width : 1000px){
-    .home{
-        gap:4rem;
-    }
-}
-@media(max-width : 995px){
-    .home{
-        flex-direction:column;
-        margin: 5rem 4rem;
-    }
-    .home .home-content h3{
-        font-size: 2.5rem;
-    }
-    .home-content h1{
-        font-size: 5rem;
-    }
-    .home-img img{
-        width:70vw;
-        margin-top: 4rem;
-    }
-}
-
-
-/* Global Styles */
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-family: poppins, sans-serif;
-    text-decoration: none;
-    color: white;
-}
-
-body {
-    overflow-x: hidden;
-    background: #222;
-    color: white;
-
-}
 
 /* Section Styling - Full Screen Sections */
 section {
@@ -270,8 +191,8 @@ section {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    padding: 20px;
-    border-top: 5px solid #007ced;
+    padding: 40px;
+    border-bottom: 5px solid #007ced;
 }
 
 section h2 {
@@ -416,19 +337,113 @@ section h2 {
     }
 }
 
-@media(max-width: 995px){
+
+@media (max-width: 995px) {
+    nav .togglebtn {
+        display: initial;
+    }
+    .click span {
+        position: absolute;
+        margin-top: 12px;
+    }
+    .click span:first-child {
+        transform: rotate(-40deg);
+    }
+    .click span:nth-child(2) {
+        opacity: 0;
+        margin: 0;
+    }
+    .click span:last-child {
+        transform: rotate(40deg);
+        top: 0;
+    }
+    nav .navlinks {
+        position: absolute;
+        top: 20px;
+        right: -100%;
+        bottom: 0;
+        width: 60%;
+        height: 110vh;
+        background-color: #222;
+        z-index: 3;
+        box-shadow: 5px 13px 30px rgba(0, 0, 0, 0.1);
+        transition: right 0.5s;
+        padding: 25px 0;
+    }
+    nav .navlinks li {
+        display: block;
+    }
+    nav .navlinks li a {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    nav .navlinks.open {
+        right: 0;
+    }
+}
+
+@media(max-width : 995px){
     .home{
+        gap:4rem;
+        text-align: center;
+        min-height: max-content;
+    }
+    .container {
         flex-direction: column;
-        margin: 5rem 4rem;
+        text-align: center;
+        min-height: max-content;
     }
-    .home .home-content h3{
-        font-size: 2.5rem;
+    
+    .hero-text h1 {
+        font-size: 1.5rem;
     }
-    .home-content h1{
-        font-size: 5rem;
+    .hero-text p {
+        font-size: 13px;
     }
-    .home-img img{
-        width: 70vw;
-        margin-top: 4rem;
+    
+    .btn-group {
+        margin-bottom: 10px; /* Adds extra space below buttons */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .btn-group .btn {
+        width: 50%; /* Makes buttons easier to tap on mobile */
+        text-align: center;
+    }
+
+    .social {
+        margin-bottom: 40px; /* Ensures space below social links */
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+@media (max-width: 995px) {
+    .skills-list, .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skills-list li, .service-box {
+        width: 90%;
+    }
+}
+@media (max-width: 995px) {
+    .exp-box {
+        flex-direction: row;
+    }
+    .exp-box {
+        width: 90%;
+    }
+}
+@media (max-width: 995px) {
+    #skills, #services, #experience, #contact {
+        padding: 20px;
+        min-height: max-content;
+        margin-top: 10px;  /* Add spacing to separate sections */
     }
 }
