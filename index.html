@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -150,4 +151,158 @@
     </div>
 </section>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viswanadh Babunuru | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"/>
+
+</head>
+<body>
+   
+    <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-v"></i>
+                    <div class="logo-text"><a href="#home">Viswanadh Babunuru</a></div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <section id="home">
+            <div class="container">
+                <div class="hero-pic">
+                    <img src="images/3.jpeg" alt="profile pic" >
+
+                </div>
+                <div class="hero-text">
+                    <h5>
+                        Hi I'm <span class="input">Software Engineer</span>
+                    </h5>
+                    <h1>Viswanadh Babunuru</h1>
+                    <p>I am a Software Engineer with over 2 years of experience in developing 
+                        scalable applications using Java, Spring Boot, and Microservices. 
+                        I specialize in RESTful API design, performance optimization, 
+                        and seamless data flow. Passionate about problem-solving, 
+                        full-stack development, and Agile methodologies, I thrive 
+                        on building high-performance applications.
+                    </p>
+                    <div class="btn-group">
+                        <a href="ViswanadhBabunuru_SoftwareEngineer_resume - SE.pdf" class="btn active">Resume</a>
+                        <a href="#contact" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/viswanadhbabunuru?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0yqIejtcRs656Awm%2BghNWw%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Viswa184"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-link"></i></a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav =document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click",function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed = new Typed(".input",{
+            strings:["Software Engineer","Java Full Stack Developer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:30,
+            loop:true
+        })
+    </script>
+<section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>Microservices</li>
+        <li>Hibernate</li>
+        <li>JDBC</li>
+        <li>Spring MVC</li>
+        <li>REST APIs</li>
+        <li>MySQL</li>
+        <li>MongoDB</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git & GitHub</li>
+        <li>AWS</li>
+        <li>Devops</li>
+        <li>CI/CD</li>
+    </ul>
+</section>
+
+<section id="services">
+    <h2>My Services</h2>
+    <div class="service-container">
+        <div class="service-box">
+            <i class="fa-solid fa-code"></i>
+            <h3>Java Full Stack Development</h3>
+            <p><lu></lu>Expert in developing robust and scalable full-stack applications using Java, Spring Boot, and Angular. Ensuring seamless integration of front-end and back-end components for high-performance applications.</p>
+        </div>
+        <div class="service-box">
+            <i class="fa-solid fa-cloud"></i>
+            <h3>Cloud Deployment & CI/CD Pipelines</h3>
+            <p>Skilled in deploying applications on AWS cloud infrastructure and implementing CI/CD pipelines with Jenkins and Docker to automate build, test, and deployment processes.</p>
+        </div>
+        <div class="service-box">
+            <i class="fa-solid fa-database"></i>
+            <h3>Database Optimization & Performance Tuning</h3>
+            <p>Proficient in SQL query optimization, database indexing, and performance tuning techniques to enhance system efficiency and scalability. Experienced with MySQL and MongoDB.</p>
+        </div>
+    </div>
+</section>
+<section id="experience" class="section">
+    <h2>Experience</h2>
+    <div class="exp-box">
+        <h3>Software Engineer - HCLTech</h3>
+        <p>Developed and maintained Java-based microservices using Spring Boot, improving system scalability and API response times.
+        Designed and integrated RESTful APIs, ensuring seamless communication between microservices and frontend applications built with Angular.</p>
+        <p>Implemented CI/CD pipelines with Jenkins and Docker, automating build and deployment processes for improved efficiency.
+        Optimized SQL queries and database indexing, reducing query execution time and enhancing application performance.</p>
+        <p>Designed and implemented microservices architecture using Spring Boot, ensuring modular and scalable software development.</p>
+        <p>Created responsive user interfaces with Angular, providing seamless customer experiences for banking applications.</p>
+    </div>
+</section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    
+    <div class="social-links">
+        <p><i class="fa-solid fa-phone"></i> +91 7032370948</p>       
+        <p>Email to : viswanadhbabunuru@gmail.com</p>
+        <p> <a href="https://www.linkedin.com/in/viswanadhbabunuru?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B0yqIejtcRs656Awm%2BghNWw%3D%3D"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn profile</a></p>
+    </div>
+</section>
+</body>
+>>>>>>> 18ae1d9091539faedfd9fe75206c381d0e4c5ab1
 </html>
